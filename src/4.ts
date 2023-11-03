@@ -26,12 +26,11 @@ class Person {
 
 // Абстрактний клас House
 abstract class House {
-  protected door: boolean;
+  protected door: boolean = false // Двері закриті за замовчуванням;
   protected key: Key;
   protected tenants: Person[] = [];
 
   constructor(key: Key) {
-    this.door = false; // Двері закриті за замовчуванням
     this.key = key;
   }
 
